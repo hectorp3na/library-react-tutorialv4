@@ -1,6 +1,5 @@
-//TODO2: please have a look at the routes/welcome.tsx file and do something similar here.
 
-import type { Route } from "./+types/home";
+import type { Route } from "../+types/root";
 import { Home as HomePage } from "../pages/home/home";
 
 export function meta({}: Route.MetaArgs) {

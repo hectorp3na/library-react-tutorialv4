@@ -1,8 +1,6 @@
 import { useState } from "react";
-//Your previous path was "./assets/Library.svg". ./ means root eg theres ./app, ./node_modules, ./public .... theres no ./assets
-//TODO1: pelase study paths - relative paths, full paths - this is really important for the app to work. 
-import LibrarySvg from "./public/Library.svg";
-import UndrawBooksSvg from "./public/Undraw_Books.svg";
+import LibrarySvg from "./public/assets/Library.svg";
+import UndrawBooksSvg from "./public/assets/Undraw_Books.svg";
 
 export function Home() {
   const [menuOpen, setMenuOpen] = useState(false);

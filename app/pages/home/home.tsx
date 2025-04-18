@@ -8,35 +8,38 @@ export function Home() {
   const openMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
 
-  return (
-    <>
-      <section id="landing">
-        <nav>
-          <div className="nav__container">
-            <img className="logo" src={LibrarySvg} alt="Library Logo" />
-            <ul className="nav__links">
-              <li>
-                <a href="#" className="nav__link">
-                  Home
-                </a>
+return (
+    <><section id="landing">
+      <nav>
+        <div className="nav__container">
+          <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
+          <ul className='nav__links'>
+            <li><a href="#" className="nav__link">Home</a></li>
+            <li><a href="#" className="nav__link">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/books.html" className="nav__link nav__link--primary">Books</a></li>
+          </ul>
+          <button className="btn__menu" onClick={openMenu}>
+            <i className="fas fa-bars"></i>
+          </button>
+          <div className="menu__backdrop">
+            <button className='btn__menu btn__menu--close' onClick={closeMenu}>
+              <i className='fas fa-times'></i>
+            </button>
+            <ul className='menu__links'>
+              <li className='menu__list'>
+                <a href="#" className='menu__link' onClick={closeMenu}>Home</a>
               </li>
-              <li>
-                <a href="#" className="nav__link">
-                  Contact
-                </a>
+              <li className='menu__list'>
+                <a href='#features' className='menu__link' onClick={closeMenu}>Books</a>
               </li>
-              <li>
-                <a
-                  href="http://127.0.0.1:5500/books.html"
-                  className="nav__link nav__link--primary"
-                >
-                  Books
-                </a>
+              <li className='menu_list'>
+                <a className='menu__link no-cursor' onClick={closeMenu}>Contact</a>
               </li>
             </ul>
             <button className="btn__menu" onClick={openMenu}>
               <i className="fas fa-bars"></i>
             </button>
+          </div>
           </div>
 
           {menuOpen && (

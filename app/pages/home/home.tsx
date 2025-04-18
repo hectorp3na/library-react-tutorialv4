@@ -2,31 +2,40 @@ import LibrarySvg from "./assets/Library.svg";
 import UndrawBooksSvg from "./assets/Undraw_Books.svg";
 
 export function Home() {
-  //TODO: define onclick functions here before passing it to the return.
-  return (
-    <>
-      <section id="landing">
-        <nav>
-          <div className="nav__container">
-            <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
-            <ul className="nav__links">
-              <li>
-                <a href="#" className="nav__link">
-                  Home
-                </a>
+
+  const openMenu = () => {
+    document.querySelector(".menu__backdrop")?.classList.add("open");
+  };
+  const closeMenu = () => {
+    document.querySelector(".menu__backdrop")?.classList.remove("open");
+};
+
+return (
+    <><section id="landing">
+      <nav>
+        <div className="nav__container">
+          <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
+          <ul className='nav__links'>
+            <li><a href="#" className="nav__link">Home</a></li>
+            <li><a href="#" className="nav__link">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/books.html" className="nav__link nav__link--primary">Books</a></li>
+          </ul>
+          <button className="btn__menu" onClick={openMenu}>
+            <i className="fas fa-bars"></i>
+          </button>
+          <div className="menu__backdrop">
+            <button className='btn__menu btn__menu--close' onClick={closeMenu}>
+              <i className='fas fa-times'></i>
+            </button>
+            <ul className='menu__links'>
+              <li className='menu__list'>
+                <a href="#" className='menu__link' onClick={closeMenu()}>Home</a>
               </li>
-              <li>
-                <a href="#" className="nav__link">
-                  Contact
-                </a>
+              <li className='menu__list'>
+                <a href='#features' className='menu__link' onClick={closeMenu()}>Books</a>
               </li>
-              <li>
-                <a
-                  href="http://127.0.0.1:5500/books.html"
-                  className="nav__link nav__link--primary"
-                >
-                  Books
-                </a>
+              <li className='menu_list'>
+                <a className='menu__link no-cursor' onClick={closeMenu()}>Contact</a>
               </li>
             </ul>
             <button className="btn__menu">
@@ -414,7 +423,7 @@ export function Home() {
               <figure className="footer__logo">
                 {/* //TODO: fix the route for the image - assets folder is in public. */}
                 <img
-                  src="./assets/Library.svg"
+                  src={LibrarySvg}
                   className="footer__logo--img"
                   alt=""
                 />

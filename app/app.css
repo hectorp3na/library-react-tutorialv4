@@ -50,6 +50,13 @@ a:hover {
 
 ul {
   display: flex;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
 }
 
 li {
@@ -133,13 +140,14 @@ button:active {
 }
 
 .nav__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #7342d6;
-  font-size: 20px;
-  position: relative;
-  margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7342d6;
+    font-size: 20px;
+    position: relative;
+    margin-left: 8px;
+
 }
 
 .cart__length {

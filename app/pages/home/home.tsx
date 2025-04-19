@@ -8,38 +8,100 @@ export function Home() {
   const openMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
 
-return (
-    <><section id="landing">
-      <nav>
-        <div className="nav__container">
-          <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
-          <ul className='nav__links'>
-            <li><a href="#" className="nav__link">Home</a></li>
-            <li><a href="#" className="nav__link">Contact</a></li>
-            <li><a href="http://127.0.0.1:5500/books.html" className="nav__link nav__link--primary">Books</a></li>
-          </ul>
-          <button className="btn__menu" onClick={openMenu}>
-            <i className="fas fa-bars"></i>
-          </button>
-          <div className="menu__backdrop">
-            <button className='btn__menu btn__menu--close' onClick={closeMenu}>
-              <i className='fas fa-times'></i>
-            </button>
-            <ul className='menu__links'>
-              <li className='menu__list'>
-                <a href="#" className='menu__link' onClick={closeMenu}>Home</a>
+  return (
+    <>
+      <section id="landing">
+        <nav>
+          <div className="nav__container">
+            <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
+            <ul className="nav__links">
+              <li className="nav__list">
+                <a href="#" className="nav__link">
+                  Home
+                </a>
               </li>
-              <li className='menu__list'>
-                <a href='#features' className='menu__link' onClick={closeMenu}>Books</a>
+              <li className="nav__list">
+                <a href="#" className="nav__link">
+                  Books
+                </a>
               </li>
-              <li className='menu_list'>
-                <a className='menu__link no-cursor' onClick={closeMenu}>Contact</a>
+              <li className="nav__icon">
+                <a href="/cart" className="nav__link">
+                <i className="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+
+              <button className="btn__menu" onClick={openMenu}>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="bars"
+                  className="svg-inline--fa fa-bars fa-w-14 "
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  ></path>
+                </svg>
+              </button>
+
+              <li className="nav__icon">
+                <a className="nav__link" href=".cart">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="shopping-cart"
+                    className="svg-inline--fa fa-shopping-cart fa-w-18 "
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                    ></path>
+                  </svg>
+                </a>
               </li>
             </ul>
-            <button className="btn__menu" onClick={openMenu}>
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
+
+            <div className="menu__backdrop">
+              <button
+                className="btn__menu btn__menu--close"
+                onClick={closeMenu}
+              >
+                <i className="fas fa-times"></i>
+              </button>
+              <ul className="menu__links">
+                <li className="menu__list">
+                  <a href="#" className="menu__link" onClick={closeMenu}>
+                    Home
+                  </a>
+                </li>
+                <li className="menu__list">
+                  <a
+                    href="#features"
+                    className="menu__link"
+                    onClick={closeMenu}
+                  >
+                    Books
+                  </a>
+                </li>
+                <li className="menu_list">
+                  <a className="menu__link" href="/cart" onClick={closeMenu}>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+              <button className="btn__menu" onClick={openMenu}>
+                <i className="fas fa-bars"></i>
+              </button>
+            </div>
           </div>
 
           {menuOpen && (
@@ -71,7 +133,7 @@ return (
                     href="#"
                     onClick={closeMenu}
                   >
-                    Contact
+                    Cart
                   </a>
                 </li>
               </ul>
@@ -142,12 +204,7 @@ return (
 
         <section id="features">
           <div className="container">
-            <div className="row"></div>
-          </div>
-        </section>
-
-        <section id="recent">
-          <div className="container__img">
+            
             <div className="row">
               <h2 className="section__title">
                 Featured <span className="purple">Books</span>
@@ -169,9 +226,7 @@ return (
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
                   </div>
-                  <div className="book__price">
-                    <span className="book__price--normal">$59.95</span> $14.95
-                  </div>
+                  <div className="book__price">$59.95</div>
                 </div>
 
                 <div className="book">
@@ -190,9 +245,7 @@ return (
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
                   </div>
-                  <div className="book__price">
-                    <span className="book__price--normal">$39.95</span> $12.95
-                  </div>
+                  <div className="book__price">$39.95</div>
                 </div>
 
                 <div className="book">
@@ -211,9 +264,7 @@ return (
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
                   </div>
-                  <div className="book__price">
-                    <span className="book__price--normal">$59.95</span> $14.95
-                  </div>
+                  <div className="book__price">$59.95</div>
                 </div>
 
                 <div className="book">
@@ -232,9 +283,7 @@ return (
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
                   </div>
-                  <div className="book__price">
-                    <span className="book__price--normal">$39.95</span> $22.95
-                  </div>
+                  <div className="book__price">$39.95</div>
                 </div>
               </div>
             </div>
@@ -242,10 +291,10 @@ return (
         </section>
 
         <section id="recent">
-          <div className="container__latest">
+          <div className="container">
             <div className="row">
               <h2 className="section__title">
-                Latest <span className="purple">Books</span>
+                Discount <span className="purple">Books</span>
               </h2>
               <div className="books">
                 <div className="book">
@@ -421,7 +470,7 @@ return (
         </section>
 
         <section id="explore">
-          <div className="container__explore">
+          <div className="container">
             <div className="row row__column">
               <h2 className="section__title">
                 Explore more <span className="purple">Books</span>
@@ -436,7 +485,7 @@ return (
 
       <footer>
         <div className="container">
-          <div className="row footer__row">
+          <div className="row row__column">
             <a href="#">
               <img
                 className="footer__logo"
@@ -444,15 +493,18 @@ return (
                 alt="Library Logo"
               />
             </a>
-            <div className="footer__social--list">
+            <div className="footer__list">
               <a href="#" className="footer__link">
                 Home
               </a>
-              <a href="#features" className="footer__link">
+              <a href="#" className="footer__link">
                 About
               </a>
-              <a href="#" className="footer__link no-cursor">
-                Contact
+              <a href="/books" className="footer__link">
+                Books
+              </a>
+              <a href="/cart" className="footer__link">
+                Cart
               </a>
             </div>
             <div className="footer__copyright">&copy; 2025 Library</div>

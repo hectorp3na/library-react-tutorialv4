@@ -1,6 +1,8 @@
 import { useState } from "react";
 import LibrarySvg from "./public/assets/Library.svg";
 import UndrawBooksSvg from "./public/assets/Undraw_Books.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faShoppingCart, faXmark,  } from '@fortawesome/free-solid-svg-icons';
 
 export function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +29,7 @@ export function Home() {
               </li>
               <li className="nav__icon">
                 <a href="/cart" className="nav__link">
-                <i className="fa-solid fa-cart-shopping"></i>
+                  <FontAwesomeIcon icon={faShoppingCart} />
                 </a>
               </li>
 
@@ -75,7 +77,7 @@ export function Home() {
                 className="btn__menu btn__menu--close"
                 onClick={closeMenu}
               >
-                <i className="fas fa-times"></i>
+                  <FontAwesomeIcon icon={faXmark} />
               </button>
               <ul className="menu__links">
                 <li className="menu__list">
@@ -99,7 +101,7 @@ export function Home() {
                 </li>
               </ul>
               <button className="btn__menu" onClick={openMenu}>
-                <i className="fas fa-bars"></i>
+               <FontAwesomeIcon icon={faBars} />
               </button>
             </div>
           </div>
@@ -110,7 +112,7 @@ export function Home() {
                 className="btn__menu btn__menu--close"
                 onClick={closeMenu}
               >
-                <i className="fas fa-times"></i>
+                  <FontAwesomeIcon icon={faXmark} />
               </button>
               <ul className="menu__links">
                 <li className="menu__list">
@@ -170,7 +172,9 @@ export function Home() {
               <div className="highlight__wrapper">
                 <div className="highlight">
                   <div className="highlight__img">
-                    <i className="fas fa-bolt feature__icon"></i>
+                    <i className="fas fa-bolt feature__icon">
+                    <FontAwesomeIcon icon={["fas", "bolt"]} />
+                    </i>
                   </div>
                   <h3 className="highlight__subtitle">Easy and Quick</h3>
                   <p className="highlight__para">
@@ -180,7 +184,9 @@ export function Home() {
 
                 <div className="highlight">
                   <div className="highlight__img>">
-                    <i className="fas fa-book-open feature__icon"></i>
+                    <i className="fas fa-book-open feature__icon">
+                    <FontAwesomeIcon icon={["fas", "book-open"]} />
+                    </i>
                   </div>
                   <h3 className="highlight__subtitle">10,000+ Books</h3>
                   <p className="highlight__para">
@@ -190,7 +196,9 @@ export function Home() {
 
                 <div className="highlight">
                   <div className="highlight__img">
-                    <i className="fas fa-tags feature__icon"></i>
+                    <i className="fas fa-tags feature__icon">
+                    <FontAwesomeIcon icon={["fas", "tags"]} />
+                    </i>
                   </div>
                   <h3 className="highlight__subtitle">Affordable</h3>
                   <p className="highlight__para">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import LibrarySvg from "./public/assets/Library.svg";
 import UndrawBooksSvg from "./public/assets/Undraw_Books.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faXmark, faBars, faBolt, faBookOpen, faTags } from '@fortawesome/free-solid-svg-icons';
 
 
 export function Home() {
@@ -154,7 +154,7 @@ export function Home() {
                 <div className="highlight">
                   <div className="highlight__img">
                     <i className="fas__fa-bolt__feature__icon">
-                    <FontAwesomeIcon icon={["fas", "bolt"]} />
+                    <FontAwesomeIcon icon={faBolt} />
                     </i>
                   </div>
                   <h3 className="highlight__subtitle">Easy and Quick</h3>
@@ -166,7 +166,7 @@ export function Home() {
                 <div className="highlight">
                   <div className="highlight__img">
                     <i className="fas__fa-book-open__feature__icon">
-                    <FontAwesomeIcon icon={["fas", "book-open"]} />
+                    <FontAwesomeIcon icon={faBookOpen} />
                     </i>
                   </div>
                   <h3 className="highlight__subtitle">10,000+ Books</h3>
@@ -178,7 +178,7 @@ export function Home() {
                 <div className="highlight">
                   <div className="highlight__img">
                     <i className="fas__fa-tags__feature__icon">
-                    <FontAwesomeIcon icon={["fas", "tags"]} />
+                    <FontAwesomeIcon icon={faTags} />
                     </i>
                   </div>
                   <h3 className="highlight__subtitle">Affordable</h3>

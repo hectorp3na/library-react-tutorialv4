@@ -123,6 +123,7 @@ button:active {
 
 .nav__links {
   display: flex;
+  padding: 10px;
 }
 
 .nav__link {
@@ -188,7 +189,7 @@ button:active {
   font-size: 32px;
   border: none;
   color: #7342d6;
-  display: none;
+  
 }
 
 .menu__backdrop {
@@ -253,7 +254,7 @@ LANDING
 }
 
 header {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 0px);
 }
 
 .header__container {
@@ -374,19 +375,19 @@ HIGHLIGHTS
 }
 
 .fas__fa-bolt__feature__icon {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   
 }
 
 .fas__fa-book-open__feature__icon {
-width: 20px;
-height: 20px;
+width: 35px;
+height: 35px;
 }
 
 .fas__fa-tags__feature__icon {
-width: 20px;
-height: 20px;
+width: 35px;
+height: 35px;
 }
 
 .highlight__subtitle {
@@ -478,8 +479,14 @@ FEATURES
 }
 
 .book__ratings {
+  display: flex;
   margin-bottom: 8px;
   color: #fabf2a;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
 }
 
 .book__price--normal {

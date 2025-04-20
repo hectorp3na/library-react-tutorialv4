@@ -68,7 +68,7 @@ export function Home() {
                 </li>
               </ul>
               <button className="btn__menu" onClick={openMenu}>
-               <FontAwesomeIcon icon={faBars} />
+               <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}} />
               </button>
             </div>
           </div>
@@ -77,9 +77,8 @@ export function Home() {
             <div className="menu__backdrop">
               <button
                 className="btn__menu btn__menu--close"
-                onClick={closeMenu}
-              >
-                  <FontAwesomeIcon icon={faXmark} />
+                onClick={closeMenu}>
+                <FontAwesomeIcon icon={faXmark} style={{ width: "32px", height: "32px"}} />
               </button>
               <ul className="menu__links">
                 <li className="menu__list">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import LibrarySvg from "./public/assets/Library.svg";
 import UndrawBooksSvg from "./public/assets/Undraw_Books.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faXmark, faBars, faBolt, faBookOpen, faTags } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faXmark, faBars, faBolt, faBookOpen, faTags, faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 
 
 export function Home() {
@@ -159,7 +159,7 @@ export function Home() {
                   </div>
                   <h3 className="highlight__subtitle">Easy and Quick</h3>
                   <p className="highlight__para">
-                    Get access to the book you purchased instantly.
+                    Get access to the book you purchased online instantly.
                   </p>
                 </div>
 
@@ -209,11 +209,17 @@ export function Home() {
                   </figure>
                   <div className="book__title">Crack the Coding Interview</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                    
+                    <FontAwesomeIcon icon={faStar} />
+                   
+                    <FontAwesomeIcon icon={faStar} />
+                
+                    <FontAwesomeIcon icon={faStar} />
+                  
+                    <FontAwesomeIcon icon={faStar} />
+          
+                    <FontAwesomeIcon icon={faStarHalfStroke} />
+                 
                   </div>
                   <div className="book__price">$59.95</div>
                 </div>
@@ -228,11 +234,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Atomic Habits</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">$39.95</div>
                 </div>
@@ -247,11 +257,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Can't Hurt Me</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">$59.95</div>
                 </div>
@@ -266,11 +280,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Deep Work</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">$39.95</div>
                 </div>
@@ -296,11 +314,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">The 10X Rule</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$59.95</span> $14.95
@@ -317,11 +339,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Be Obsseessed Or Be Average</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $12.95
@@ -338,11 +364,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Rich Dad Poor Dad</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$59.95</span> $14.95
@@ -359,11 +389,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Cashflow Quadrant</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $22.95
@@ -380,11 +414,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">48 Laws of Power</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $22.95
@@ -401,11 +439,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">The 5 Second Rule</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $22.95
@@ -422,11 +464,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Your Next Five Moves</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $22.95
@@ -443,11 +489,15 @@ export function Home() {
                   </figure>
                   <div className="book__title">Mastery</div>
                   <div className="book__ratings">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
+                  <FontAwesomeIcon icon={faStar} />
+                   
+                   <FontAwesomeIcon icon={faStar} />
+               
+                   <FontAwesomeIcon icon={faStar} />
+                 
+                   <FontAwesomeIcon icon={faStar} />
+         
+                   <FontAwesomeIcon icon={faStarHalfStroke} />
                   </div>
                   <div className="book__price">
                     <span className="book__price--normal">$39.95</span> $22.95

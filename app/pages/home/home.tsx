@@ -52,13 +52,7 @@ export function Home() {
                 </svg>
               </button>
 
-              <li className="nav__icon">
-                <a href="/cart" className="nav__link">
-                  <FontAwesomeIcon icon={faShoppingCart} />
-                </a>
-              </li>
-           
-
+          
             <div className="menu__backdrop">
               <button
                 className="btn__menu btn__menu--close"
@@ -159,7 +153,7 @@ export function Home() {
               <div className="highlight__wrapper">
                 <div className="highlight">
                   <div className="highlight__img">
-                    <i className="fas fa-bolt feature__icon">
+                    <i className="fas__fa-bolt__feature__icon">
                     <FontAwesomeIcon icon={["fas", "bolt"]} />
                     </i>
                   </div>
@@ -171,7 +165,7 @@ export function Home() {
 
                 <div className="highlight">
                   <div className="highlight__img">
-                    <i className="fas fa-book-open feature__icon">
+                    <i className="fas__fa-book-open__feature__icon">
                     <FontAwesomeIcon icon={["fas", "book-open"]} />
                     </i>
                   </div>
@@ -183,7 +177,7 @@ export function Home() {
 
                 <div className="highlight">
                   <div className="highlight__img">
-                    <i className="fas fa-tags feature__icon">
+                    <i className="fas__fa-tags__feature__icon">
                     <FontAwesomeIcon icon={["fas", "tags"]} />
                     </i>
                   </div>

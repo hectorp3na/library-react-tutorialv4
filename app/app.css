@@ -132,7 +132,7 @@ button:active {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px;
+
   color: #7342d6;
 }
 
@@ -858,7 +858,7 @@ select {
     display: block;
     margin-left: auto;
     margin-top: 8px;
-    
+    padding: 4px;
 
   }
 

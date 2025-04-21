@@ -124,6 +124,7 @@ button:active {
 .nav__links {
   display: flex;
   padding: 10px;
+  margin-left: 500px;
 }
 
 .nav__link {
@@ -186,10 +187,10 @@ button:active {
 
 .btn__menu {
   background-color: transparent;
-  font-size: 32px;
+
   border: none;
   color: #7342d6;
-  
+
 }
 
 .menu__backdrop {

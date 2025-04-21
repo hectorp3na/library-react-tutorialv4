@@ -28,15 +28,18 @@ export function Home() {
                   Books
                 </a>
               </li>
+        
+              </ul>
+              <button className="btn__menu" onClick={openMenu}>
+              <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}}  />
+              </button>
+
               <li className="nav__icon">
                 <i className="nav__link">
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </i>
               </li>
-              </ul>
-              <button className="btn__menu" onClick={openMenu}>
-              <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}}  />
-              </button>
+              
 
           
             <div className="menu__backdrop">

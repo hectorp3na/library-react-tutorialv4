@@ -857,7 +857,7 @@ select {
   }
 
   .nav__icon {
-    display: flex;
+    display: block;
   }
 
   .nav__links {

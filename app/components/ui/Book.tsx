@@ -33,7 +33,10 @@ const Book: React.FC<BookProps> = ({ book, originalPrice }) => {
       </div>
       <div className="book__ratings">
         {
-            new Array(5).fill(0).map((_, index) => <FontAwesomeIcon icon={faStar} key={index} className="book__ratings--star" />)
+            new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon={faStar} key={index} className="book__ratings--star" />)
+        }
+        {
+            Number.isInteger(book.rating) ? '' : <FontAwesomeIcon icon={faStarHalfStroke} className="book__ratings--star" />
         }
       </div>
       <div className="book__price">

@@ -35,7 +35,7 @@ export function Home() {
               </li>
               </ul>
               <button className="btn__menu" onClick={openMenu}>
-              <FontAwesomeIcon icon={faBars} style={{ width: "30px", height: "30px"}}  />
+              <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}}  />
               </button>
 
           

@@ -124,7 +124,7 @@ button:active {
 .nav__links {
   display: flex;
   padding: 10px;
-  margin-left: 500px;
+  margin-left: auto;
 }
 
 .nav__link {
@@ -186,6 +186,7 @@ button:active {
 }
 
 .btn__menu {
+  display: none;
   background-color: transparent;
 
   border: none;
@@ -855,7 +856,11 @@ select {
     display: block;
   }
 
-  .nav__list {
+  .nav__icon {
+    display: flex;
+  }
+
+  .nav__links {
     display: none;
   }
 

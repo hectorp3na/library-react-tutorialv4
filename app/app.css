@@ -854,10 +854,15 @@ select {
 @media (max-width: 550px) {
   .btn__menu {
     display: block;
+    margin-left: auto;
+    margin-top: 8px;
+    
+
   }
 
   .nav__icon {
     display: block;
+    margin-left: 8px;
   }
 
   .nav__links {

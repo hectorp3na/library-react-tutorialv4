@@ -6,74 +6,34 @@ import { faShoppingCart, faXmark, faBars, faBolt, faBookOpen, faTags, faStar, fa
 
 
 export function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const openMenu = () => setMenuOpen(true);
-  const closeMenu = () => setMenuOpen(false);
-
   return (
-    <>
-      <section id="landing">
-        <nav>
-          <div className="nav__container">
-            <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
-            <ul className="nav__links">
-              <li className="nav__list">
-                <a href="#" className="nav__link">
-                  Home
-                </a>
+    <><section id="landing">
+      <nav>
+        <div className="nav__container">
+          <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
+          <ul className='nav__links'>
+            <li><a href="#" className="nav__link">Home</a></li>
+            <li><a href="#" className="nav__link">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/books.html" className="nav__link nav__link--primary">Books</a></li>
+          </ul>
+          <button className="btn__menu" onClick={openMenu}>
+            <i className="fas fa-bars"></i>
+          </button>
+          <div className="menu__backdrop">
+            <button className='btn__menu btn__menu--close' onClick={closeMenu}>
+              <i className='fas fa-times'></i>
+            </button>
+            <ul className='menu__links'>
+              <li className='menu__list'>
+                <a href="#" className='menu__link' onClick={closeMenu()}>Home</a>
               </li>
-              <li className="nav__list">
-                <a href="#" className="nav__link">
-                  Books
-                </a>
+              <li className='menu__list'>
+                <a href='#features' className='menu__link' onClick={closeMenu()}>Books</a>
               </li>
-        
-              </ul>
-              <button className="btn__menu" onClick={openMenu}>
-              <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}}  />
-              </button>
-
-              <li className="nav__icon">
-                <i className="nav__link">
-                  <FontAwesomeIcon icon={faShoppingCart} />
-                </i>
+              <li className='menu_list'>
+                <a className='menu__link no-cursor' onClick={closeMenu()}>Contact</a>
               </li>
-              
-
-          
-            <div className="menu__backdrop">
-              <button
-                className="btn__menu btn__menu--close"
-                onClick={closeMenu}
-              >
-                  <FontAwesomeIcon icon={faXmark} />
-              </button>
-              <ul className="menu__links">
-                <li className="menu__list">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
-                    Home
-                  </a>
-                </li>
-                <li className="menu__list">
-                  <a
-                    href="#features"
-                    className="menu__link"
-                    onClick={closeMenu}
-                  >
-                    Books
-                  </a>
-                </li>
-                <li className="menu__list">
-                  <a className="menu__link" href="/cart" onClick={closeMenu}>
-                    Cart
-                  </a>
-                </li>
-              </ul>
-              <button className="btn__menu" onClick={openMenu}>
-               <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}} />
-              </button>
-            </div>
+            </ul>
           </div>
 
           {menuOpen && (

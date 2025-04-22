@@ -26,15 +26,15 @@ const Highlights = () => {
                 title= "Easy and Quick"  
                 para= "Get access to the book you purchased online instantly."
                 /> 
-              </div>
-              <div className="highlight__wrapper">
+             
+              <div className="highlight">
                 <Highlight icon= { <i className="fas__fa-book-open__feature__icon"> <FontAwesomeIcon 
                 icon={faBookOpen} /> </i> } 
                 title= "10,000+ Books"  
                 para= "  Library has books in all your favorite categories."
                 /> 
               </div>
-              <div className="highlight__wrapper">
+              <div className="highlight">
                 <Highlight icon= { <i className="fas__fa-tags__feature__icon"> <FontAwesomeIcon 
                 icon={faTags} /> </i> } 
                 title= "Affordable"  
@@ -42,7 +42,9 @@ const Highlights = () => {
                 /> 
               </div>
             </div>
+            </div>
           </div>
+         
         </section>
     );
 };

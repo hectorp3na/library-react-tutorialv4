@@ -30,7 +30,7 @@ const Book: React.FC<BookProps> = ({ book, originalPrice }) => {
         </figure>
       </a>
       <div className="book__title">
-        <a href=""> {book.title}</a>
+        <a className="book__title--link" href=""> {book.title}</a>
       </div>
       <div className="book__ratings">
         {

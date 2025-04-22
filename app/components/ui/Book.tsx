@@ -16,6 +16,7 @@ interface BookProps {
     url: string;
     title: string;
     salePrice: number | null;
+    rating: number;
   };
   originalPrice: number;
 }
@@ -36,7 +37,7 @@ const Book: React.FC<BookProps> = ({ book, originalPrice }) => {
             new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon={faStar} key={index} className="book__ratings--star" />)
         }
         {
-            Number.isInteger(book.rating) ? '' : <FontAwesomeIcon icon={faStarHalfStroke} className="book__ratings--star" />
+            !Number.isInteger(book.rating) && <FontAwesomeIcon icon={faStarHalfStroke} className="book__ratings--star" />
         }
       </div>
       <div className="book__price">

@@ -14,108 +14,76 @@ import {
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+    function openMenu() {
+      document.body.classList.add("menu--open");
+    }
   
-    const openMenu = () => setMenuOpen(true);
-    const closeMenu = () => setMenuOpen(false);
+    function closeMenu() {
+      document.body.classList.remove("menu--open");
+    }
+
   return (
-      <nav>
-<div className="nav__container">
-          <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
-          <ul className="nav__links">
-            <li className="nav__list">
-              <a href="#" className="nav__link">
+    <nav>
+      <div className="nav__container">
+        <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
+        <ul className="nav__links">
+          <li className="nav__list">
+            <a href="#" className="nav__link">
+              Home
+            </a>
+          </li>
+          <li className="nav__list">
+            <a href="#" className="nav__link">
+              Books
+            </a>
+          </li>
+        </ul>
+        <button className="btn__menu" onClick= {openMenu}>
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{ width: "32px", height: "32px" }}
+          />
+        </button>
+
+        <li className="nav__icon">
+          <i className="nav__link">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </i>
+        </li>
+
+        <div className="menu__backdrop">
+        <button className="btn__menu btn__menu--close" onClick={closeMenu}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
+          <ul className="menu__links">
+            <li className="menu__list">
+              <a href="#" className="menu__link">
                 Home
               </a>
             </li>
-            <li className="nav__list">
-              <a href="#" className="nav__link">
+            <li className="menu__list">
+              <a href="#features" className="menu__link">
                 Books
               </a>
             </li>
-      
-            </ul>
-            <button className="btn__menu" onClick={openMenu}>
-            <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}}  />
-            </button>
-
-            <li className="nav__icon">
-              <i className="nav__link">
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </i>
+            <li className="menu__list">
+              <a className="menu__link" href="/cart">
+                Cart
+              </a>
             </li>
-            
-
-        
-          <div className="menu__backdrop">
-            <button
-              className="btn__menu btn__menu--close"
-              onClick={closeMenu}
-            >
-                <FontAwesomeIcon icon={faXmark} />
-            </button>
-            <ul className="menu__links">
-              <li className="menu__list">
-                <a href="#" className="menu__link" onClick={closeMenu}>
-                  Home
-                </a>
-              </li>
-              <li className="menu__list">
-                <a
-                  href="#features"
-                  className="menu__link"
-                  onClick={closeMenu}
-                >
-                  Books
-                </a>
-              </li>
-              <li className="menu__list">
-                <a className="menu__link" href="/cart" onClick={closeMenu}>
-                  Cart
-                </a>
-              </li>
-            </ul>
-            <button className="btn__menu" onClick={openMenu}>
-             <FontAwesomeIcon icon={faBars} style={{ width: "32px", height: "32px"}} />
-            </button>
-          </div>
+          </ul>
         </div>
-
-        {menuOpen && (
-          <div className="menu__backdrop">
-            <button
-              className="btn__menu btn__menu--close"
-              onClick={closeMenu}>
-              <FontAwesomeIcon icon={faXmark} style={{ width: "32px", height: "32px"}} />
-            </button>
-            <ul className="menu__links">
-              <li className="menu__list">
-                <a href="#" className="menu__link" onClick={closeMenu}>
-                  Home
-                </a>
-              </li>
-              <li className="menu__list">
-                <a
-                  href="#features"
-                  className="menu__link"
-                  onClick={closeMenu}
-                >
-                  Books
-                </a>
-              </li>
-              <li className="menu__list">
-                <a
-                  className="menu__link no-cursor"
-                  href="#"
-                  onClick={closeMenu}
-                >
-                  Cart
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
-      </nav>
-  )
-}
+      </div>
+    </nav>
+  );
+};
 
 export default Nav;
+
+
+function useEffect(arg0: () => void, arg1: boolean[]) {
+  throw new Error("Function not implemented.");
+}
+
+

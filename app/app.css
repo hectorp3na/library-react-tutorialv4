@@ -201,7 +201,8 @@ button:active {
   transition: all 300ms ease;
   opacity: 0;
   transform: translate(100%);
-}
+ }
+ 
 
 .menu--open {
   max-height: 100vh;
@@ -332,7 +333,7 @@ HIGHLIGHTS
 
 #highlights:before {
   /* TODO: please change this to -100% */
-  transform: translateY(-200%);
+  transform: translateY(-100%);
   top: 1px;
 }
 
@@ -480,6 +481,11 @@ FEATURES
   margin-bottom: 8px;
   color: #fabf2a;
 }
+
+.book__ratings--star {
+  font-size: 6px;
+}
+
 
 .star {
   width: 18px;

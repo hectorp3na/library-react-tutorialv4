@@ -201,8 +201,7 @@ button:active {
   transition: all 300ms ease;
   opacity: 0;
   transform: translate(100%);
- }
- 
+}
 
 .menu--open {
   max-height: 100vh;
@@ -480,12 +479,12 @@ FEATURES
   display: flex;
   margin-bottom: 8px;
   color: #fabf2a;
+  /* TODO: play around with width and height properties - start with width: "100px" */
 }
 
 .book__ratings--star {
   font-size: 6px;
 }
-
 
 .star {
   width: 18px;

@@ -34,7 +34,7 @@ const Nav = () => {
             </a>
           </li>
           <li className="nav__list">
-            <a href="#" className="nav__link">
+            <a href="/books" className="nav__link">
               Books
             </a>
           </li>
@@ -63,7 +63,7 @@ const Nav = () => {
               </a>
             </li>
             <li className="menu__list">
-              <a href="#features" className="menu__link">
+              <a href="/books" className="menu__link">
                 Books
               </a>
             </li>

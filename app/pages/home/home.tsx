@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Nav from "app/components/Nav";
+import Nav from "../../components/Nav";
 import LibrarySvg from "./public/assets/Library.svg";
 import UndrawBooksSvg from "./public/assets/Undraw_Books.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,32 +19,21 @@ import Featured from "~/components/Featured";
 import Discounted from "~/components/Discounted";
 import Explore from "~/components/Explore";
 import Footer from "~/components/Footer";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Books from "../home/Books";
 
 
 
 export function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const openMenu = () => setMenuOpen(true);
-  const closeMenu = () => setMenuOpen(false);
-
+ 
   return (
-    <>
-      <section id="landing">
-      <Nav />
-      <Landing />
-     </section>
-
-     <main>
-      <Highlights />
-      <Featured />
-      <Discounted />
-      <Explore />
-      <Footer />
-         
-      </main>
-
-      
-    </>
+    <Router>
+  <div className="App">
+    <Nav />
+    <Route path="/" element={<Home />} />
+    <Route path="/books" Component={Books} />
+    <Footer /> 
+   </div>
+   </Router>
   );
 }

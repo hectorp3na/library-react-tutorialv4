@@ -16,7 +16,7 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
     function openMenu() {
-      document.body.classList.add("menu--open");
+      document.body.classList.add(" menu--open");
     }
   
     function closeMenu() {
@@ -39,7 +39,7 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <button className="btn__menu" onClick= {openMenu}>
+        <button className="btn__menu" onClick={openMenu}>
           <FontAwesomeIcon
             icon={faBars}
             style={{ width: "32px", height: "32px" }}

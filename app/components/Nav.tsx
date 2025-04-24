@@ -29,7 +29,7 @@ const Nav = () => {
         <img className="logo" src={LibrarySvg} alt="Library Logo"></img>
         <ul className="nav__links">
           <li className="nav__list">
-            <a href="#" className="nav__link">
+            <a href="/home" className="nav__link">
               Home
             </a>
           </li>
@@ -58,7 +58,7 @@ const Nav = () => {
           </button>
           <ul className="menu__links">
             <li className="menu__list">
-              <a href="#" className="menu__link">
+              <a href="/home" className="menu__link">
                 Home
               </a>
             </li>

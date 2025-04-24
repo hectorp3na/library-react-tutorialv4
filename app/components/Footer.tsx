@@ -14,7 +14,7 @@ const Footer = () => {
               />
             </a>
             <div className="footer__list">
-              <a href="#" className="footer__link">
+              <a href="/home" className="footer__link">
                 Home
               </a>
              <span className="footer__link no-cursor">

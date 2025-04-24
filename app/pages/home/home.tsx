@@ -19,7 +19,7 @@ import Featured from "~/components/Featured";
 import Discounted from "~/components/Discounted";
 import Explore from "~/components/Explore";
 import Footer from "~/components/Footer";
-// TODO: please remove this import and follow correct procedure for reclering routes - look back in chat/watch the video
+
 
 
 
